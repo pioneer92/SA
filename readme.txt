@@ -1,0 +1,2 @@
+该工程包含了三种风格。adtstyle文件夹对应的是抽象数据风格，invretstyle文件夹对应的是调用返回风格，pipestyle文件夹对应的是管道过滤器风格。源代码是用MyEclipse 6.5写的。可直接将工程导入MyEclipse中即可运行，也可以运行SA文件夹里面的start.bat选择某个风格运行。
+抽象数据风格的按字母排序算法用的是快速排序算法，代码位于SA\src\adtstyle\impl.AlphabetizerImpl.java，调用返回风格用的是插入排序算法，代码位于SA\src\invretstyle\Alphabetizer.java，管道过滤器风格用的是堆排序算法，代码位于SA\src\pipestyle\Alphabetizer.java。三种风格都对一些噪音词汇进行过滤，private static final String ignore = "a#$an#$and#$as#$is#$the#$of#$"，上面语句中由"#$"间隔开的就是噪音词汇。SA\input.txt是输入文件，可对其进行配置来解析不同的文本。
